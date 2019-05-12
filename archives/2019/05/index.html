@@ -81,7 +81,7 @@
 
 <meta property="og:type" content="website">
 <meta property="og:title" content="刘宇同学的博客">
-<meta property="og:url" content="https://www.52momoyu.com/index.html">
+<meta property="og:url" content="https://www.52momoyu.com/archives/2019/05/index.html">
 <meta property="og:site_name" content="刘宇同学的博客">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
@@ -115,13 +115,13 @@
 
 
 
-  <link rel="canonical" href="https://www.52momoyu.com/"/>
+  <link rel="canonical" href="https://www.52momoyu.com/archives/2019/05/"/>
 
 
 
 
 
-  <title>刘宇同学的博客</title>
+  <title>归档 | 刘宇同学的博客</title>
   
 
 
@@ -140,8 +140,7 @@
     
   
 
-  <div class="container sidebar-position-left 
-  page-home">
+  <div class="container sidebar-position-left page-archive">
     <div class="headband"></div>
 
     <header id="header" class="header" itemscope itemtype="http://schema.org/WPHeader">
@@ -214,200 +213,75 @@
         <div class="content-wrap">
           <div id="content" class="content">
             
-  <section id="posts" class="posts-expand">
-    
+
+  
+  
+  
+  <div class="post-block archive">
+    <div id="posts" class="posts-collapse">
+      <span class="archive-move-on"></span>
+
+      <span class="archive-page-counter">
+        
+        
+        
+          
+        
+        嗯..! 目前共计 1 篇日志。 继续努力。
+      </span>
+
       
 
-  
+        
+        
+        
 
-  
-  
-  
+        
+          
+          <div class="collection-title">
+            <h1 class="archive-year" id="archive-year-2019">2019</h1>
+          </div>
+        
+        
+
+        
 
   <article class="post post-type-normal" itemscope itemtype="http://schema.org/Article">
-  
-  
-  
-  <div class="post-block">
-    <link itemprop="mainEntityOfPage" href="https://www.52momoyu.com/2019/05/12/漫漫脱发路-android5-0之RecyclerView-1/">
+    <header class="post-header">
 
-    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
-      <meta itemprop="name" content="momoyu">
-      <meta itemprop="description" content="">
-      <meta itemprop="image" content="/images/avatar.gif">
-    </span>
-
-    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="刘宇同学的博客">
-    </span>
-
-    
-      <header class="post-header">
-
+      <h2 class="post-title">
         
-        
-          <h1 class="post-title" itemprop="name headline">
-                
-                <a class="post-title-link" href="/2019/05/12/漫漫脱发路-android5-0之RecyclerView-1/" itemprop="url">漫漫脱发路_android5.0之RecyclerView</a></h1>
-        
-
-        <div class="post-meta">
-          <span class="post-time">
-            
-              <span class="post-meta-item-icon">
-                <i class="fa fa-calendar-o"></i>
-              </span>
+            <a class="post-title-link" href="/2019/05/12/漫漫脱发路-android5-0之RecyclerView-1/" itemprop="url">
               
-                <span class="post-meta-item-text">发表于</span>
+                <span itemprop="name">漫漫脱发路_android5.0之RecyclerView</span>
               
-              <time title="创建于" itemprop="dateCreated datePublished" datetime="2019-05-12T17:01:58+08:00">
-                2019-05-12
-              </time>
-            
-
-            
-
-            
-          </span>
-
-          
-
-          
-            
-          
-
-          
-          
-
-          
-
-          
-
-          
-
-        </div>
-      </header>
-    
-
-    
-    
-    
-    <div class="post-body" itemprop="articleBody">
-
-      
-      
-
-      
+            </a>
         
-          
-            <h1 id="android-5-0-新特性"><a href="#android-5-0-新特性" class="headerlink" title="android 5.0 新特性"></a>android 5.0 新特性</h1><hr>
-<h3 id="RecyclerView"><a href="#RecyclerView" class="headerlink" title="RecyclerView"></a><strong>RecyclerView</strong></h3><h5 id="基础使用方式"><a href="#基础使用方式" class="headerlink" title="基础使用方式"></a>基础使用方式</h5><pre><code>recyclerView = findViewById(R.id.mRecyclerView);
-LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this); 
-linearLayoutManager.setOrientation(LinearLayoutManager.VERTICAL);
-recyclerView.setLayoutManager(linearLayoutManager);
+      </h2>
 
-MyAdapter myAdapter = new MyAdapter(this, strings);
-recyclerView.setAdapter(myAdapter);
-</code></pre><h5 id="RecyclerViewAdapter"><a href="#RecyclerViewAdapter" class="headerlink" title="RecyclerViewAdapter"></a>RecyclerViewAdapter</h5><pre><code>public class MyAdapter extends RecyclerView.Adapter&lt;MyAdapter.MyViewHolder&gt;   //继承RecyclerView.Adapter
+      <div class="post-meta">
+        <time class="post-time" itemprop="dateCreated"
+              datetime="2019-05-12T17:01:58+08:00"
+              content="2019-05-12" >
+          05-12
+        </time>
+      </div>
 
-//创建ViewHolder
-@Override
-public MyViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
-    View view = LayoutInflater.from(mContext).inflate(R.layout.item_recyclerview_tv,parent,false);
-    MyViewHolder myViewHolder = new MyViewHolder(view);
-    return myViewHolder;
-}
+    </header>
+  </article>
 
-//绑定holder数据
-@Override
-public void onBindViewHolder(MyViewHolder holder, int position) {
-    holder.tv.setText(mList.get(position));
 
-    //设置item点击事件
-    holder.tv.setOnClickListener(new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            //回调
-            if (mListener != null) mListener.onItemClick(holder.getLayoutPosition());
-        }
-    });
-}
 
-//获取item数量
-@Override
-public int getItemCount() {
-    return mList.size();
-}
-
-private OnItemClickListener mListener;
-
-interface OnItemClickListener {
-    void onItemClick(int position);
-}
-
-public void addOnItemClickListener(OnItemClickListener listener) {
-    this.mListener = listener;
-}
-</code></pre><p>与ListView不同的是需要在adapter增加item点击事件的监听，在onBindViewHolder里绑定点击事件。</p>
-<p><em>需要注意的是在onCreateViewHolder创建hodler的时候一定要用 LayoutInflater.from(mContext).inflate(R.layout.item_recyclerview_tv,parent,false); inflate() 第二个参数是父布局 item的布局属性需要通过parent来获取</em></p>
-<pre><code>if (root != null) {
-    if (DEBUG) { 
-        System.out.println(&quot;Creating params from root: &quot; +
-                root);
-    }
-    // Create layout params that match root, if supplied
-    params = root.generateLayoutParams(attrs);
-    if (!attachToRoot) {
-        // Set the layout params for temp if we are not
-        // attaching. (If we are, we use addView, below)
-        temp.setLayoutParams(params);
-    }
-}
-</code></pre><p><em>第三个参数如果传true会出现以下异常，所以这里要传false</em></p>
-<pre><code>java.lang.IllegalStateException: The specified child already has a parent. You must call removeView() on the child&apos;s parent first.
-</code></pre><h5 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a>分割线</h5><p>RecyclerView可以自定义分割线，通过继承RecyclerView.ItemDecoration来实现。 也可以使用默认的分割线，addItemDecoration（）方法需要在setAdapter之前调用</p>
-<pre><code>//默认分割线
-DividerItemDecoration mDividerItemDecoration = new DividerItemDecoration(recyclerView.getContext(),
-            linearLayoutManager.getOrientation());
-recyclerView.addItemDecoration(mDividerItemDecoration);
-</code></pre>
-          
-        
       
+
     </div>
-    
-    
-    
-
-    
-
-    
-
-    
-
-    <footer class="post-footer">
-      
-
-      
-
-      
-
-      
-      
-        <div class="post-eof"></div>
-      
-    </footer>
   </div>
   
   
   
-  </article>
-
-
-    
-  </section>
 
   
+
 
 
           </div>
